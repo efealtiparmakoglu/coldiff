@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "coldiff"
+version = "1.0.0"
+description = "Column-aware CSV diff: added/removed/changed rows with cell-level old -> new values"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+
+[project.scripts]
+coldiff = "coldiff:main"
